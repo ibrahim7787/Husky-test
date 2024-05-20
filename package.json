@@ -6,10 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install"
   },
   "dependencies": {
-    "husky": "^9.0.11",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18"
@@ -20,13 +20,14 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
+    "husky": "^8.0.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "echo 'Pre-commit hook triggered!' && npm run lint"
     }
   }
 }
