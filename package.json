@@ -26,7 +26,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo 'Pre-commit hook triggered!'"
+      "pre-commit": "npm run lint"
     }
   }
 }
